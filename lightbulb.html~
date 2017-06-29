@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="light-bulb.png">
+    <link rel="shortcut icon" href="light-bulb.png">
+    <title>Simple Light Bulb</title>
+    <style>
+      #titleImg{ width: 2px;height:2px;}
+     .container{
+         background-color: #00ff00;
+         text-align: center;
+         padding: 2em;
+         margin: 0 auto;
+        }  
+        button {
+          text-align:center;
+          margin: 2em;        
+        }
+        footer{text-align: center;}  
+    </style>  
+  </head>
+  <body>
+    <div class="container">
+      <div id="imgDiv">
+      <img id="bulbImg" src="pic_bulboff.gif" alt="image of a light bulb"> 
+      </div>
+      <div id="btnDiv">
+      <button onclick="switchOn();">ON</button> <button onclick="switchOff();">OFF</button>
+      </div>  
+    </div>
+    <footer>
+     <p>&copy;<a href="https://www.qilobyt.com">qilobyt</a>2017</p>
+     <p>Bulb icon by Freepik</p>    
+    </footer>
+    <script>
+     let bulb = document.getElementById('bulbImg');
+     let switchOn = ()=>{
+          bulb.src = 'pic_bulbon.gif'; 
+     } 
+     
+     let switchOff = ()=>{
+          bulb.src = 'pic_bulboff.gif'; 
+     }    
+    </script>  
+  </body>
+
+</html>
